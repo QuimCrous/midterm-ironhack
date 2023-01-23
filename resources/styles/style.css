@@ -73,6 +73,66 @@ body {
 
 /* Your CSS code goes here */
 
+.main{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.text-left h1{
+  font-size: 70px;
+  padding: 10px;
+}
+
+.text-left p {
+  padding: 10px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.534);
+  padding: 10px;
+}
+
+.main-buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-buttons a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.main-buttons a:last-child {
+  background-color: var(--primary);
+  color: aliceblue;
+}
+
+.image-right {
+  width: 30%;
+}
+
+
+.hero-img {
+  height: 400px;
+}
+
+.card1-img {
+  height: 200px;
+}
+
+.card2-img {
+  height: 200px;
+}
 /* ------------------------------ Partners ------------------------------ */
 
 /* Your CSS code goes here */
