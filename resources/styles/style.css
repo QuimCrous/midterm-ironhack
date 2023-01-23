@@ -2,12 +2,14 @@
 
 :root {
   --primary: #072ac8;
+  --backgroung-color-white: #F2F4FC;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--backgroung-color-white);
 }
 
 body {
@@ -31,6 +33,41 @@ body {
 /* ------------------------------ Navbar ------------------------------ */
 
 /* Your CSS code goes here */
+
+.nav-bar {
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar nav ul li a{
+  margin: 15px;
+  text-decoration: none;
+}
+
+
+.contact-button a {
+  padding: 15px;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: aliceblue;
+}
 
 /* ------------------------------ Header ------------------------------ */
 
