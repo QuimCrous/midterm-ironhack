@@ -74,10 +74,12 @@ body {
 /* Your CSS code goes here */
 
 .main{
-  height: 600px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: center;
+  margin: 50px;
+  
 }
 
 .text-left {
@@ -89,13 +91,13 @@ body {
 }
 
 .text-left h1{
-  font-size: 70px;
+  font-size: 3rem;
   padding: 10px;
 }
 
 .text-left p {
   padding: 10px;
-  font-size: 24px;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.534);
   padding: 10px;
 }
@@ -119,23 +121,47 @@ body {
 
 .image-right {
   width: 30%;
+  display: block;
+  position: relative;
 }
 
 
 .hero-img {
-  height: 400px;
+  width: 100%;
 }
 
 .card1-img {
-  height: 200px;
+  background: none;
+  position: absolute;
+  left: -30px;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  width: 50%;
 }
 
 .card2-img {
-  height: 200px;
+  background: none;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -80px;
+  bottom: -100px;
+  width: 50%;
 }
 /* ------------------------------ Partners ------------------------------ */
 
 /* Your CSS code goes here */
+
+.brands {
+  width: 100vw;
+  height: 20%;
+}
+
+.brands a img {
+  padding: 0 10px 0 10px;
+  width: 10%;
+}
 
 /* ------------------------------ Recent projects ------------------------------ */
 
@@ -191,6 +217,61 @@ body {
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* Your CSS code goes here */
+  .main {
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .main-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-left {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .text-left p {
+    text-align: center;
+  }
+
+  .image-right {
+    padding-top: 10px;
+    width: 40%;
+  }
+
+  .card1-img {
+    display: none;
+  }
+
+  .card2-img {
+    display: none;
+  }
+/*******************/
+
+.brands {
+  width: 100vw;
+}
+
+.brands a img {
+  width: 10%;
+}
+
+
 }
 
 /* ------------------------------ Hamburguer menu ------------------------------ */
