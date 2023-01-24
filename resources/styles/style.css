@@ -3,6 +3,7 @@
 :root {
   --primary: #072ac8;
   --backgroung-color-white: #F2F4FC;
+  --background-color-blue:  rgba(1, 1, 41, 0.788);
 }
 
 * {
@@ -155,22 +156,136 @@ body {
 
 .brands {
   width: 100vw;
-  height: 20%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .brands a img {
-  padding: 0 10px 0 10px;
-  width: 10%;
+  width: 10rem;
+  gap: 10px;
 }
 
 /* ------------------------------ Recent projects ------------------------------ */
 
 /* Your CSS code goes here */
 
+.projects {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  height: 100%;
+  width: 80vw;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container h2 {
+  font-size: 36px;
+  color: coral;
+  padding-bottom: 10px;
+}
 /* ------------------------------ Client reviews ------------------------------ */
 
 /* Your CSS code goes here */
+.testimonial {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.testimonial-container {
+  width: 80vw;
+  height: 80%;
+  background-color: var(--background-color-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.testimonial-container h2 {
+  background: none;
+  color: var(--backgroung-color-white);
+  font-size: 36px;
+}
+
+.test-p {
+  width: 50%;
+  background: none;
+  color: rgb(136, 136, 88);
+  font-size: 30px;
+  text-align: center;
+}
+
+.kristin-container{
+  background: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.kristin-container div {
+  background: none;
+  padding-left: 10px;
+}
+
+.kristin-p1{
+  background: none;
+  color: rgb(95, 95, 214);
+}
+
+.kristin-p2{
+  background: none;
+  color: white;
+}
+
+.kristin-container img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.test {
+  width: 10%;
+}
+
+.test-img1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: none;
+}
+
+.test-img2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  background: none;
+}
+
+.test-img3 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background: none;
+}
+
+.test-img4 {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  background: none;
+}
 /* ------------------------------ Services ------------------------------ */
 
 /* Your CSS code goes here */
