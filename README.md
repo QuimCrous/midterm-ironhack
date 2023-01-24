@@ -116,6 +116,10 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ###### Martes 24, Enero 2023
 
+- [ ] Estilar index.html + responsive
+- [ ] Ej - Crear section "about", "contact" y "project" en html
+- [ ] Ej - Crear estilos en el css de las nuevas sections
+
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
