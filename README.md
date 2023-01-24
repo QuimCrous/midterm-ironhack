@@ -123,6 +123,7 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [x] Estilar index > services
 - [x] Estilar index > question
 - [x] Estilar index > footer
+- [x] Hacer estilo responsive de index.html
 - [ ] Crear section "about", "contact" y "project" en html
 
 

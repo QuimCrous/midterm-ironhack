@@ -14,5 +14,14 @@ let projectData = fetch("https://jsonplaceholder.typicode.com/posts")
 
 }).catch((err) => console.log(err))
 
+let scroll = document.querySelector(".scroll");
 
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
+scroll.addEventListener("click", scrollToTop);
 

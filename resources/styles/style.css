@@ -70,6 +70,10 @@ body {
   color: aliceblue;
 }
 
+.menu-hamburguer {
+  display: none;
+}
+
 /* ------------------------------ Header ------------------------------ */
 
 /* Your CSS code goes here */
@@ -492,6 +496,23 @@ footer > div{
 .links-list ul > li > a {
   text-decoration: none;
 }
+
+.scroll {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  z-index: 5;
+  bottom: 0;
+}
+
+.scroll h3 {
+  color: #F2F4FC;
+  background: none;
+}
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
 /* -------------------------------------------------------------------------- */
@@ -526,6 +547,48 @@ footer > div{
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* Your CSS code goes here */
+
+  .nav-bar nav ul {
+    display: none;
+  }
+
+  .contact-button a{
+    display: none;
+  }
+
+  .nav-bar {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .menu-hamburguer {
+    display: contents;
+  }
+
+  .menu-hamburguer input{
+    display: none;
+  }
+
+  .menu-hamburguer input:checked ~ ul{
+    display: block;
+  }
+
+  .menu-hamburguer label {
+    box-sizing: border-box;
+    display: inline-block;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+
+/**************/ 
+
   .main {
     flex-direction: column;
     width: 100vw;
@@ -573,12 +636,31 @@ footer > div{
 /*******************/
 
   .brands {
+    margin-top: 20px;
     width: 100vw;
+    height: auto;
+    flex-direction: column;
   }
 
   .brands a img {
-    width: 10%;
+    width: 200px;
   }
+
+/**************/
+
+  .projects{
+    height: 100%;
+  }
+
+  .project-container > div{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project {
+    width: 100%;
+  }
+
 
 /**************/
 
@@ -593,6 +675,72 @@ footer > div{
 
   .test {
     display: none;
+  }
+
+/**************/
+
+  .services {
+    height: 100%;
+    width: 100%;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .services-container > div {
+    width: 100%;
+  }
+
+/**************/  
+
+  .question-container {
+    width: 100%;
+  }
+  .question-container h2 {
+    font-size: 28px;
+  }
+
+  #email {
+    width: 200px;
+  }
+
+/**************/ 
+
+  footer > div{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-address{
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img{
+    width: 100%;
+  }
+
+  .logo-address p {
+    margin-bottom: 20px;
+  }
+
+  .links-list ul{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-list ul > li{
+    width: 100%;
+    font-size: 20px;
   }
 }
 /* ------------------------------ Hamburguer menu ------------------------------ */
