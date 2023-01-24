@@ -383,6 +383,31 @@ body {
   margin-bottom: 120px;
 }
 
+.question-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: none;
+}
+
+#email {
+  height: 60px;
+  width: 500px;
+  background-image: url(../images/newsletter/icon/mail.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 35px;
+}
+
+.question-container div > a {
+  text-decoration: none;
+  background-color: var(--primary);
+  color: aliceblue;
+  margin-left: 20px;
+  padding: 20px;
+}
+
 /* ------------------------------ Footer ------------------------------ */
 
 /* Your CSS code goes here */

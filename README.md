@@ -121,7 +121,7 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [ ] Estilar index > projects
 - [x] Estilar index > testimonial
 - [x] Estilar index > services
-- [ ] Estilar index > question
+- [x] Estilar index > question
 - [ ] Estilar index > footer
 - [ ] Crear section "about", "contact" y "project" en html
 
