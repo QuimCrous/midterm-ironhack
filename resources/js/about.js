@@ -5,23 +5,15 @@ const town = document.querySelector(".location");
 const biography = document.querySelector(".biography");
 
 let getJson = () => {
-    fetch("user.json")
+    fetch("/resources/js/user.json")
       .then((response) => response.json())
-      .then((rickAndMortyInfo) => {
-        console.table(rickAndMortyInfo);
-        let userData = "";
-        rickAndMortyInfo.forEach((infoFromJson) => {
-          userData += `
-                <ul>
-          <li>${infoFromJson.id}</li>
-          <li>${infoFromJson.name}</li>
-          <li>${infoFromJson.profession}</li>
-      </ul>
-                `;
-        });
+      .then((res) => {
+        myName.innerText = res.name;
+        town.innerText = res.location;
+        biography.innerText = res.biography;
         
       })
       .catch((error) => console.log(error));
   };
   
-//window.addEventListener("load", getJson)
+window.addEventListener("load", getJson)
