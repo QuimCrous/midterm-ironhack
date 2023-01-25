@@ -69,28 +69,18 @@ let projectData = fetch("https://jsonplaceholder.typicode.com/posts")
 
 }).catch((err) => console.log(err))
 
+
 let scrollToProject = document.querySelector(".scrollToProject");
+let scrollToProjectHam = document.querySelector(".ham-scroll-project");
+let elementToScroll = document.querySelector(".projects")
 
 const scrollToProjectFunction = () => {
-    window.scrollTo({
-        top: 1200,
-        behavior: "smooth"
-    })
+    elementToScroll.scrollIntoView({behavior:"smooth"})
 }
 
 scrollToProject.addEventListener("click", scrollToProjectFunction);
+scrollToProjectHam.addEventListener("click", scrollToProjectFunction);
 
-
-let scrollToServices = document.querySelector(".scrollToServices");
-
-const scrollToServicesFunction = () => {
-    window.scrollTo({
-        top: 2700,
-        behavior: "smooth"
-    })
-}
-
-scrollToServices.addEventListener("click", scrollToServicesFunction);
 
 function slugify(text) {
     return text.toString().toLowerCase().trim()
