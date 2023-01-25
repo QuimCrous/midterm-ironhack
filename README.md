@@ -137,6 +137,7 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [ ] Añadir la animacion circular a la carga de paginas (splash)
 - [ ] Buscar como hacer y añadir los efectos skew
 - [ ] Hacer que el "Scroll to top" solo aparezca al haber scrolleado un poco hacia abajo primero
+- [x] Añadir el slider en la section brands del index 
 - [ ] Estilar y comprobar que los links del nav funcionen correctamente
 
 #### Day Four

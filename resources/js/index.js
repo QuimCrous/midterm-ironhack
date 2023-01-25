@@ -17,7 +17,17 @@ let projectData = fetch("https://jsonplaceholder.typicode.com/posts")
 
 }).catch((err) => console.log(err))
 
-let scroll = document.querySelector(".scroll");
+let scrollBtn = document.querySelector(".scroll");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  }
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -26,30 +36,30 @@ const scrollToTop = () => {
     })
 }
 
-scroll.addEventListener("click", scrollToTop);
+scrollBtn.addEventListener("click", scrollToTop);
 
 let scrollToProject = document.querySelector(".scrollToProject");
+let scrollToProjectHam = document.querySelector(".ham-scroll-project");
+let elementToScroll = document.querySelector(".projects")
 
 const scrollToProjectFunction = () => {
-    window.scrollTo({
-        top: 1200,
-        behavior: "smooth"
-    })
+    elementToScroll.scrollIntoView({behavior:"smooth"})
 }
 
 scrollToProject.addEventListener("click", scrollToProjectFunction);
+scrollToProjectHam.addEventListener("click", scrollToProjectFunction);
 
 
 let scrollToServices = document.querySelector(".scrollToServices");
+let scrollToServicesHam = document.querySelector(".ham-scroll-services");
+let elementToScrollService = document.querySelector(".services")
 
 const scrollToServicesFunction = () => {
-    window.scrollTo({
-        top: 2700,
-        behavior: "smooth"
-    })
+    elementToScrollService.scrollIntoView({behavior:"smooth"})
 }
 
 scrollToServices.addEventListener("click", scrollToServicesFunction);
+scrollToServicesHam.addEventListener("click", scrollToServicesFunction);
 
 
 

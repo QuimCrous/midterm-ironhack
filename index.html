@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="resources/styles/style.css" />
   </head>
   <body>
-
+    <div class="skew-me">
     <div class="nav-bar">
       <nav>
         <div class="logo">
@@ -26,17 +26,24 @@
           <a href="./contact-us.html">Contact Us</a>
         </div>
 
-        <div class="menu-hamburguer">
-          <input type="checkbox" id="menu">
-          <label for="menu"> ☰ </label>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="" class="scrollToProject">Projects</a></li>
-            <li><a href="" class="scrollToServices">Services</a></li>
-            <li><a href="./aboutUs.html">About</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
-          </ul>
+        <div class="burguer-menu">
+          <div class="nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+            <div class="menu-items">
+              <li><a href="./index.html">Home</a></li>
+              <li><a class="ham-scroll-project">Projects</a></li>
+              <li><a class="ham-scroll-services">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="./contact-us.html">Contact</a></li>               
+            </div>
+          </div>
         </div>
+  
       </nav>
     </div>
 
@@ -58,13 +65,29 @@
     </section>
 
     <section class="brands">
-      <a href=""><img src="./resources/images/logos/Adidas_Logo.svg" alt="Adidas_Logo"></a>
-      <a href=""><img src="./resources/images/logos/airbnb-logo.svg" alt="airbnb-logo"></a>
-      <a href=""><img src="./resources/images/logos/amazon-logo.svg" alt="amazon-logo"></a>
-      <a href=""><img src="./resources/images/logos/fedex-logo.svg" alt="fedex-logo"></a>
-      <a href=""><img src="./resources/images/logos/google-logo.svg" alt="google-logo"></a>
-      <a href=""><img src="./resources/images/logos/Logo_NIKE.svg" alt="nike-logo"></a>
-      <a href=""><img src="./resources/images/logos/microsoft-logo.svg" alt="microsoft-logo"></a>
+      <div class="slide-track">
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/Adidas_Logo.svg" alt="Adidas_Logo"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/airbnb-logo.svg" alt="airbnb-logo"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/amazon-logo.svg" alt="amazon-logo"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/fedex-logo.svg" alt="fedex-logo"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/google-logo.svg" alt="google-logo"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/Logo_NIKE.svg" alt="nike-logo"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="./resources/images/logos/microsoft-logo.svg" alt="microsoft-logo"></a>
+        </div>
+      </div>
     </section>
 
     <section class="projects">
@@ -175,6 +198,8 @@
     <div class="scroll scroll-show">
       <h3>Scroll to top</h3>
     </div>
+    </div>
+    <script src="./resources/js/skew.js"></script>
     <script src="./resources/js/index.js"></script>
   </body>
 </html>
