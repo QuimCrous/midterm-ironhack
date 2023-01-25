@@ -124,12 +124,19 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [x] Estilar index > question
 - [x] Estilar index > footer
 - [x] Hacer estilo responsive de index.html
-- [ ] Crear section "about", "contact" y "project" en html
+- [x] Crear section "about", "contact" y "project" en html
+- [x] Añadida lógica para autocompletar los projects usando una api externa
 
 
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
+
+- [ ] Añadir flip-cards en el about-section
+- [ ] Añadir los iframes de musica en el about-section
+- [ ] Añadir la animacion circular a la carga de paginas (splash)
+- [ ] Buscar como hacer y añadir los efectos skew
+- [ ] Hacer que el "Scroll to top" solo aparezca al haber scrolleado un poco hacia abajo primero
 
 #### Day Four
 
