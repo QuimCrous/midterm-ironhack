@@ -132,11 +132,12 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ###### Miercoles 25, Enero 2023
 
-- [ ] Añadir flip-cards en el about-section
-- [ ] Añadir los iframes de musica en el about-section
+- [x] Añadir flip-cards en el about-section
+- [x] Añadir los iframes de musica en el about-section
 - [ ] Añadir la animacion circular a la carga de paginas (splash)
 - [ ] Buscar como hacer y añadir los efectos skew
 - [ ] Hacer que el "Scroll to top" solo aparezca al haber scrolleado un poco hacia abajo primero
+- [ ] Estilar y comprobar que los links del nav funcionen correctamente
 
 #### Day Four
 
