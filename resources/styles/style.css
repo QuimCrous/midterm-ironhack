@@ -388,7 +388,7 @@ body {
   justify-content: space-around;
 }
 
-.services-container div {
+.services-container > div {
   background-color: white;
   width: 30%;
   height: 100%;
@@ -396,8 +396,17 @@ body {
 }
 
 .services-container div > img {
+  width: 50px;
+
+}
+
+.image-container{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  padding: 10px;
   margin-bottom: 20px;
 }
 

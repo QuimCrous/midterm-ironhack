@@ -64,35 +64,30 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 <img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
-La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
+Éste es mi proyecto de página web como midterm project del bootcamp que estoy cursando. El proposito de este proyecto es sacar a relucir mis habilidades de 
+programador frontend y ver el desarrollo que llevo desde que empecé este bootcamp.
 
-En esta sección se puede incluir información como:
+He creado la web usando HTML, CSS y JavaScript. La página cuenta con:
 
-- Una descripción breve del proyecto y su propósito
-- Tecnologías utilizadas
-- Funcionalidades principales
-- Instrucciones de instalación y configuración
-- Enlaces a documentación adicional o recursos relacionados con el proyecto
-- Licencia del proyecto
-- Contribuciones de las personas en el proyecto.
+- Un indice con diferentes secciones, un boton al final con la funcionalidad de devolver al usuario al principio de la página, una nav-bar con los botones para redireccionar
+o enviar a una de las otras páginas, y un efecto skew que se activa al scrollear la web.
 
-En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
+- Una página de proyectos que nos muestra una sección principal donde se muestra un articulo y otras secciones. Los datos que se muestran son cargados mediante JavaScript
+usando fetch para acceder a una API publica.
+
+- Una página de contacto con un formulario que recoge los datos del usuario.
+
+- Una página de about donde hay una flip-card con informacion mia y varios iframes de canciones de YouTube.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
+Para este proyecto he utilizado HTML, CSS para estilar la web y JavaScript para la lógica que le da dinamismo. En este caso no he utilizado ni librerias externas ni Frameworks.
 
-En esta sección se puede incluir información como:
+El codigo está escrito usando el Visual Studio Code conjuntamente con git para el control de versiones. He utilizado la web <a href="https://jsonplaceholder.typicode.com">JSON Placeholder</a> para obtener datos para alimentar mi web. Tambien juntamente con el git, este proyecto esta subido en mi repositorio de github ademas utilizo 
+<a href="https://vercel.com">Vercel</a> para poder hostear la página en la red.
 
-- Lenguajes de programación utilizados
-- Frameworks y bibliotecas utilizadas
-- Herramientas de desarrollo (IDE, control de versiones, etc)
-- Servicios en la nube utilizados (si corresponde)
-- Otros recursos o tecnologías relacionadas con el proyecto.
-
-En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
