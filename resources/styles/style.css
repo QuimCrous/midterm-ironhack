@@ -6,7 +6,7 @@
   --background-color-blue:  rgba(1, 1, 41, 0.788);
 }
 
-* {
+*, *:after, *:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +17,40 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#contenedor-carga {
+  background-color: rgb(250, 240, 245, 0.9);
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease;
+  z-index: 10;
 
+}
+
+#carga {
+  border : 15px  #ccc;
+  border-top-color: #FFC600;
+  border-top-style: groove;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.proba {
+  visibility: hidden;
+}
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
@@ -168,39 +201,41 @@ body {
 }
 /* ------------------------------ Partners ------------------------------ */
 
-/* Your CSS code goes here */
-.slide > a > img {
-  height: 90px;
-  width: 150px;
-}
 
-@keyframes scroll{
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(calc(-100px*7));
-  }
-}
-
-.brands {
-  height: 100px;
-  margin-top: 100px;
+.brands{
+  max-width: 80%;
+  margin: 100px auto;
   overflow: hidden;
-  position: relative;
-  width: auto;
 }
-.brands .slide-track {
-  animation: scroll 4s linear infinite;
+
+.slide-track {
   display: flex;
-  width: calc(250px*7);
+  animation: carousel 10s linear infinite;
 }
 
-.brands .slide{
-  height: 100px;
-  width: 250px;
+.slide, .slide-one{
+  display: block;
+  width: 230px;
+  object-fit: cover;
 }
 
+.slide > a > img {
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+}
+
+.slide-one > a > img {
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+}
+
+@keyframes carousel {
+  100%{
+    transform: translateX(-1600px);
+  }
+}
 /* ------------------------------ Recent projects ------------------------------ */
 
 /* Your CSS code goes here */
@@ -515,6 +550,10 @@ footer > div{
 .logo-address {
   width: 18%;
   margin-left: 20px;
+}
+
+.logo-address > .logo{
+  margin-left: 0;
 }
 
 .logo-address p {
@@ -1062,6 +1101,10 @@ footer > div{
   .slide{
     text-align: center;
   }
+
+  .slide-one {
+    display: none;
+  }
 /**************/
 
   .projects{
@@ -1142,6 +1185,10 @@ footer > div{
     align-items: center;
   }
 
+  .logo-address > .logo {
+    margin-left: 0;
+  }
+
   .logo img{
     width: 100%;
   }
@@ -1160,6 +1207,7 @@ footer > div{
   .links-list ul > li{
     width: 100%;
     font-size: 20px;
+    text-align: center;
   }
 
 /**************/
@@ -1192,3 +1240,29 @@ footer > div{
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 
 /* Your CSS code goes here */
+
+/* #contenedor-carga {
+  background-color: rgb(250, 240, 245, 0.9);
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s eease;
+  transition: all 1s ease;
+  z-index: 10;
+}
+
+#carga {
+  border : 15px solid #ccc;
+  border-top-color: #F4266A;
+  border-top-style: groove;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto
+} */
