@@ -41,7 +41,6 @@ document.querySelector("#submit-button").addEventListener("click", function (e) 
 const successMessage = document.querySelector(".success-message");
 
 const activate = () => {
-    console.log("patata");
     successMessage.style.display = "flex";
 }
 
