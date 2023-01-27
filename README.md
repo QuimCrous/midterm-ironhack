@@ -93,11 +93,6 @@ El codigo está escrito usando el Visual Studio Code conjuntamente con git para 
 
 ## Roadmap
 
-#### Backlog
-
-- [ ] Ej - Tarea a completar y mover a su respectivo dia de ejecucion
-
-#### Day One
 
 #### Day One
 
@@ -129,19 +124,25 @@ El codigo está escrito usando el Visual Studio Code conjuntamente con git para 
 
 - [x] Añadir flip-cards en el about-section
 - [x] Añadir los iframes de musica en el about-section
-- [ ] Añadir la animacion circular a la carga de paginas (splash)
-- [ ] Buscar como hacer y añadir los efectos skew
-- [ ] Hacer que el "Scroll to top" solo aparezca al haber scrolleado un poco hacia abajo primero
+- [x] Añadir la animacion circular a la carga de paginas (splash)
+- [x] Buscar como hacer y añadir los efectos skew
+- [x] Hacer que el "Scroll to top" solo aparezca al haber scrolleado un poco hacia abajo primero
 - [x] Añadir el slider en la section brands del index 
-- [ ] Estilar y comprobar que los links del nav funcionen correctamente
+- [x] Estilar y comprobar que los links del nav funcionen correctamente
 
 #### Day Four
 
 ###### Jueves 26, Enero 2023
 
+- [x] Añadir logica para cambiar de la animacion splash a la pagina en si.
+- [x] Revisar que todo funcione correctamente
+
 #### Day Five
 
 ###### Viernes 27, Enero 2023
+
+- [x] Dar retoques al README
+- [x] Crear la presentación del proyecto
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,22 +150,20 @@ El codigo está escrito usando el Visual Studio Code conjuntamente con git para 
 
 ## Acerca
 
-La sección "sobre mí" en un archivo README es una sección que proporciona información sobre el desarrollador o equipo detrás del proyecto.
 
-En esta sección se puede incluir información como:
+Joaquim Crous - [@raistbear](https://twitter.com/raistbear) - joaquimcrous@gmail.com
 
-- Nombre y datos de contacto del desarrollador o equipo.
-- Información sobre experiencia laboral o académica relacionada con el proyecto.
-- Enlaces a perfiles en redes sociales o sitios web personales.
-- Otra información relevante que el desarrollador o equipo desee compartir.
+Project Link: [https://github.com/QuimCrous](https://github.com/QuimCrous/midterm-ironhack)
 
-En resumen, la sección "sobre mí" es una excelente manera de brindar a los usuarios y contribuidores una idea de quién está detrás del proyecto y cómo pueden ponerse en contacto con ellos si tienen preguntas o comentarios. Es una buena manera de establecer una conexión con la comunidad de desarrolladores y una forma de mostrar la transparencia en el proyecto.
+Presentation Link: [https://www.linkedin.com/in/joaquim-crous-mayné/](https://www.linkedin.com/in/joaquim-crous-mayné/)
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+#### Experiencia académica
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+- Backend Web Development Java - Ironhack Barcelona
 
-Presentation Link: [Insert here your presentation link](insert-link-here)
+- Fronted Web Development - Iroonhack Barcelona
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,30 +184,33 @@ En resumen, la sección "agradecimientos" es una excelente manera de agradecer a
 - [Icon Libraries](insert-link-here)
 - [Google Font Libraries](insert-link-here)
 
+- Agradecer a todos mis compañeros de bootcamp por el apoyo y por compartir información entre nosotros para poder mejorar nuestros proyectos.
+- A nuestros profesores por ayudarnos en nuestras dudas y darnos soporte.
+- A mi hermano por facilitarme la tarea de buscar recursos y ayudarme a plantear la logica de ciertos scripts.
+- [Páginas de consulta](https://www.w3schools.com/js/default.asp)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Desafío Técnico
 
-La sección "desafío técnico" aunque no es convencional en un proyecto profesional, en nuestro curso dependemos de esta sección en un archivo README para proporcionar información sobre los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto.
 
-En esta sección se puede incluir información como:
+- Uno de los grandes problemas que he tenido es no considerar el estilo responsivo desde el minuto uno. Es bueno que cuando se empieze a estilar se tenga en cuenta si
+se puede aprovechar algun estilo para no tener que duplicar código en la parte de estilos.
+- También ha sido un gran desafio conseguir inyectar información en el apartado de "proyectos" según el link que se pulse. Utilizé una función "slugify" para que cuando
+se pulse el botón se añadé un parámetro en la url que se reconoce al cargar la página e inyecta correctamente el contenido a mostrar. Me hubiera gustado utilizar "dynamic
+routing" pero por la falta de tiempo he emprado un metodo más sencillo (gracias bro!).
+- Para los efectos de skew, splash, logo-slide y el hamburguer-menu he tenido que recurrir a contenido de internet o información compartida por companyeros. Aun así són
+aspectos que me gustaría poder mejorar ya que no me siento seguro en como he hecho para hacer que las cosas se activen o desactiven, incluso como se visualizan algunas
+de las cosas.
 
-- Problemas técnicos específicos que se encontraron durante el desarrollo del proyecto.
-- Soluciones implementadas para superar estos desafíos.
-- Aspectos del proyecto que aún son un desafío o que requieren mejora continua.
-- Recomendaciones para futuros desarrolladores que trabajen en el proyecto.
+- Para quien en un futuro quiera emprender un proyectocomo éste, mi recomendación personal es estructurarse bien el tiempo para poder llevarlo a cabo además de no tener
+reticiencias en pedir ayuda pero no sin antes haber hecho una búsqueda por cuenta propia en internet.
 
-En resumen, la sección "desafío técnico" es una excelente manera de brindar a los usuarios y contribuidores una idea de los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto, y cómo se abordaron. Esta sección también puede ser útil para futuros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y soluciones para superarlos.
 
 ## Grande Error
 
-La sección "grande error" en un archivo README es una sección opcional que proporciona información sobre los errores importantes cometidos durante el desarrollo del proyecto.
 
-En esta sección se puede incluir información como:
+Mi gran error cometido en este proyecto ha sido sobrevalorar mis aptitudes, ya que me ha dado muchos problemas al escoger el proyecto avanzado. Para solucionarlo he tenido que estructurar bien el tiempo, para poder ejecutar todos los requerimientos y pedir ayuda externa para llegar a lo que me estaba siendo difícil.
 
-- Descripción detallada del error cometido.
-- Consecuencias del error.
-- Soluciones implementadas para corregir el error.
-- Lecciones aprendidas y recomendaciones para evitar errores similares en el futuro.
-
-En resumen, la sección "grande error" es una forma de ser transparente sobre los errores cometidos durante el desarrollo del proyecto. También puede ser útil para otros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y cómo se abordaron.
+Otro consejo que quiero recomendar, es que cuando se haga alguna busqueda en google, stack overflow o similares nunca os quedeis con la primera opción, buscad la solución
+que se adapte mejor a vustro proyecto.
